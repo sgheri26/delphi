@@ -14,7 +14,7 @@
 
 
         > ```bash
-        > sudo nano /etc/systemd/logind.conf
+        > nano /etc/systemd/logind.conf
         > ```
 
 
@@ -22,19 +22,19 @@
     - After editing logind.conf restart service systemd-logind
 
         > ```bash
-        > sudo systemctl restart systemd-logind
+        > systemctl restart systemd-logind
         > ```
 
 
     - You can also disable suspend/hibernation all togheter
 
         > ```bash
-        > sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+        > systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
         > ```
 
         - If you need to revert
 
             > ```bash
-            > sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+            > systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
             > ```
 
